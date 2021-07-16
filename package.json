@@ -2,14 +2,7 @@
   "name": "remark-extract-toc",
   "version": "1.0.0",
   "description": "remark plugin to generate and store a Table of Contents (TOC)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/zakuro9715/remark-extract-toc.git"
-  },
+  "author": "zakuro <z@kuro.red>",
   "keywords": [
     "remark",
     "remark-plugin",
@@ -19,12 +12,18 @@
     "toc",
     "markdown"
   ],
-  "author": "zakuro",
-  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zakuro9715/remark-extract-toc.git"
+  },
   "bugs": {
     "url": "https://github.com/zakuro9715/remark-extract-toc/issues"
   },
   "homepage": "https://github.com/zakuro9715/remark-extract-toc#readme",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "scripts": {
+  },
   "devDependencies": {
     "typescript": "^4.3.5"
   }
