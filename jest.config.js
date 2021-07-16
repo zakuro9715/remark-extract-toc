@@ -6,4 +6,5 @@ export default {
       useESM: true,
     },
   },
+  testPathIgnorePatterns: ["<rootDir>/dist"],
 }
