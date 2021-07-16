@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/zakuro9715/remark-extract-toc#readme",
   "license": "Apache-2.0",
+  "engine": {
+    "node": ">= 14"
+  },
   "main": "lib/index.js",
   "scripts": {
   },
