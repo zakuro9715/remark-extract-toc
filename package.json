@@ -1,0 +1,28 @@
+{
+  "name": "remark-extract-toc",
+  "version": "1.0.0",
+  "description": "remark plugin to generate and store a Table of Contents (TOC)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zakuro9715/remark-extract-toc.git"
+  },
+  "keywords": [
+    "remark",
+    "remark-plugin",
+    "plugin",
+    "mdast",
+    "markdown",
+    "toc",
+    "markdown"
+  ],
+  "author": "zakuro",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/zakuro9715/remark-extract-toc/issues"
+  },
+  "homepage": "https://github.com/zakuro9715/remark-extract-toc#readme"
+}
