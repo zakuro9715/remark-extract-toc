@@ -24,6 +24,9 @@
   "engine": {
     "node": ">= 14"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "lib/index.js",
   "scripts": {
   },
