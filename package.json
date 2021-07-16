@@ -1,5 +1,5 @@
 {
-  "name": "remark-extract-toc",
+  "name": "remark-metadata-toc",
   "version": "1.0.0",
   "description": "remark plugin to generate and store a Table of Contents (TOC)",
   "author": "zakuro <z@kuro.red>",
@@ -9,8 +9,7 @@
     "plugin",
     "mdast",
     "markdown",
-    "toc",
-    "markdown"
+    "toc"
   ],
   "repository": {
     "type": "git",
