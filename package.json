@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/zakuro9715/remark-extract-toc/issues"
   },
-  "homepage": "https://github.com/zakuro9715/remark-extract-toc#readme"
+  "homepage": "https://github.com/zakuro9715/remark-extract-toc#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }
