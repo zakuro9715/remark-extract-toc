@@ -30,8 +30,12 @@
   "type": "module",
   "main": "lib/index.js",
   "scripts": {
+    "build": "tsc"
   },
   "devDependencies": {
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "mdast-util-toc": "^6.0.0"
   }
 }
