@@ -1,0 +1,3 @@
+default: build
+tasks:
+  build: npm run build
