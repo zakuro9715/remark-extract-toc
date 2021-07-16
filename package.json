@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "@types/unist": "^2.0.6",
-    "mdast-util-toc": "^6.0.0"
+    "mdast-util-toc": "^6.0.0",
+    "unist-util-map": "^3.0.0"
   }
 }
