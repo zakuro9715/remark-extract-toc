@@ -27,7 +27,7 @@
     "access": "public"
   },
   "type": "module",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
