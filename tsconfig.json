@@ -11,5 +11,5 @@
     "esModuleInterop": true,
     "typeRoots": ["node_modules/@types"],
   },
-  "inculde": ["src"],
+  "exclude": ["**/*.spec.ts", "dist/*"]
 }
