@@ -31,6 +31,7 @@
   "scripts": {
     "build": "tsc",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "npm run test -- --watch",
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
