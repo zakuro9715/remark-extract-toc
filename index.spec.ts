@@ -1,7 +1,7 @@
 import { unified } from 'unified'
 import parse from 'remark-parse'
 import stringify from 'remark-stringify'
-import extractToc from '.'
+import storeToc from '.'
 
 const title = (...idxes: Array<number|null>) =>
   idxes.map((v) => (v || '_')).join('-')
@@ -25,11 +25,60 @@ const source = `
 #### ${title(2, null, 1, 1)}
 `
 
-test('plain md', () => {
+const expected = [
+  {
+    depth: 1,
+    value: title(1),
+    url: '#' + title(1),
+    children: [
+      {
+        depth: 2,
+        value: title(1, 1),
+        url: '#' + title(1, 1),
+        children: [
+          {
+            depth: 3,
+            value: title(1, 1, 1),
+            url: '#' + title(1, 1, 1),
+          }
+        ],
+      }
+    ],
+  },
+  {
+    depth: 1,
+    value: title(2),
+    url: '#' + title(2),
+    children: [
+      {
+        depth: 2,
+        value: '',
+        url: '',
+        children: [
+          {
+            depth: 3,
+            value: title(2, null, 1),
+            url: '#' + title(2, null, 1),
+            children: [
+              {
+                depth: 4,
+                value: title(2, null, 1, 1),
+                url: '#' + title(2, null, 1, 1),
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+]
+
+test('plain md', async () => {
   const md = unified()
     .use(parse, {})
-    .use(extractToc)
+    .use(storeToc)
     .use(stringify)
 
-  md.process(source)
+  const { data } = await md.process(source)
+  expect(data.toc).toStrictEqual(expected)
 })
