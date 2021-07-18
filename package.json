@@ -13,12 +13,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/zakuro9715/remark-extract-toc.git"
+    "url": "git+ssh://git@github.com/zakuro9715/remark-store-metadata-toc.git"
   },
   "bugs": {
-    "url": "https://github.com/zakuro9715/remark-extract-toc/issues"
+    "url": "https://github.com/zakuro9715/remark-store-metadata-toc/issues"
   },
-  "homepage": "https://github.com/zakuro9715/remark-extract-toc#readme",
+  "homepage": "https://github.com/zakuro9715/remark-store-metadata-toc#readme",
   "license": "Apache-2.0",
   "engine": {
     "node": ">= 14"
