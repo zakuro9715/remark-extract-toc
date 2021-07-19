@@ -21,7 +21,7 @@ export type Toc = TocEntry[]
 
 export interface TocEntry {
   depth: number
-  url: string
+  href: string
   value: string
   children?: Toc
 }
@@ -34,7 +34,7 @@ export default function remarkStoreMetadataToc() {
     const text = link.children[0] as Literal
     return {
       depth,
-      url: link['url'] as string,
+      href: link['url'] as string,
       value: text.value,
     }
   }
@@ -50,7 +50,7 @@ export default function remarkStoreMetadataToc() {
       if (listItem.children.length === 1 && listItem.children[0].type === 'list') {
         return {
           depth,
-          url: '',
+          href: '',
           value: '',
           children: listToToc(listItem.children[0] as List, depth + 1),
         }

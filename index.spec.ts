@@ -29,17 +29,17 @@ const expected = [
   {
     depth: 1,
     value: title(1),
-    url: '#' + title(1),
+    href: '#' + title(1),
     children: [
       {
         depth: 2,
         value: title(1, 1),
-        url: '#' + title(1, 1),
+        href: '#' + title(1, 1),
         children: [
           {
             depth: 3,
             value: title(1, 1, 1),
-            url: '#' + title(1, 1, 1),
+            href: '#' + title(1, 1, 1),
           }
         ],
       }
@@ -48,22 +48,22 @@ const expected = [
   {
     depth: 1,
     value: title(2),
-    url: '#' + title(2),
+    href: '#' + title(2),
     children: [
       {
         depth: 2,
         value: '',
-        url: '',
+        href: '',
         children: [
           {
             depth: 3,
             value: title(2, null, 1),
-            url: '#' + title(2, null, 1),
+            href: '#' + title(2, null, 1),
             children: [
               {
                 depth: 4,
                 value: title(2, null, 1, 1),
-                url: '#' + title(2, null, 1, 1),
+                href: '#' + title(2, null, 1, 1),
               },
             ],
           },
