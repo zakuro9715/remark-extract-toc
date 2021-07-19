@@ -67,7 +67,9 @@ export default function remarkStoreMetadataToc() {
 
   return (node: Node, vfile: VFile) => {
     const tocNode = toc(node).map
-    if (tocNode !== null) {
+    if (tocNode === null) {
+      vfile.data.toc = []
+    } else {
       vfile.data.toc = listToToc(tocNode, 1)
     }
   }
