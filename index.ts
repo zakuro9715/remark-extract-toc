@@ -1,7 +1,7 @@
 import { VFile } from 'vfile'
 import { Node } from 'unist'
 import { Parent, Literal, List, ListItem,  Paragraph, Link } from 'mdast'
-import { toc } from 'mdast-util-toc'
+import toc from 'mdast-util-toc'
 
 function assert(f: () => boolean, msg?: string) {
   if (!f()) {
@@ -66,6 +66,9 @@ export default function remarkStoreMetadataToc() {
   }
 
   return (node: Node, vfile: VFile) => {
-    vfile.data.toc = listToToc(toc(node).map, 1)
+    const tocNode = toc(node).map
+    if (tocNode !== null) {
+      vfile.data.toc = listToToc(tocNode, 1)
+    }
   }
 }
